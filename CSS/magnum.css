@@ -31,33 +31,34 @@ body{
 	}
 
 /* Spotlight */	
-#logo-right, #logo-left {
+#banner-right, #banner-left {
 	background-color: #003399;
 }	
 
 /***************************************
- *Logor i topen av sidan.
+ *Banner i topen av sidan.
  **************************************/
  
-#logo-right, #logo-center, #logo-left, #top{
+#banner-right, #banner-center, #banner-left, #top{
 	height:140px;
 	float: left;
 }
 
-#logo-right{
+#banner-right{
 	width: 250px;
 }
 
-#logo-center{
+#banner-center{
 	width: 495px;
 }
 
-#logo-left{
+#banner-left{
 	width: 250px;
 }
 
 /***************************************
- * För layoten som är samma i alla dokument
+ * För layot som skapar strukturen och kolumnerna
+ * på en sida.
  * Bra att komma ihåg: top, right, bottom, left
  **************************************/
  
