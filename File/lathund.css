@@ -1,0 +1,64 @@
+/*Generell tagar för hela dokumentet*/
+ body{
+	font-family: "Tahoma", "DejaVu Sans","Sans-Serif";
+	font-size: 12pt;
+}
+
+#content{
+	padding: 1pt;
+	display:box;
+	width: 500pt;
+}
+
+#introduction{
+	border-width: 5pt;
+	border-style: solid;
+	border-color: black;
+	padding: 5pt;
+	display:box;
+	width: 500pt;
+}
+
+div.example {
+	border-width: 1pt;
+	border-style: solid;
+	border-color: black;
+	padding-left: 5pt;
+	margin: 1pt;
+	display:box;
+	width: 500pt;
+}
+
+div.tag {
+	border-color: red;
+}
+
+div.style {
+	border-color: blue;
+	padding-bottom: 10pt;
+	padding-right: 15pt;
+}
+
+div.how-to ul{
+	display: none;
+}
+
+div.how-to:hover ul{
+	display: block;
+}
+
+div.example h3{
+	display: none;
+}
+
+div.example:hover h3{
+	display: block;
+}
+
+div.example p.description {
+	display: none;
+}
+
+div.example:hover p.description {
+	display: block;
+}
