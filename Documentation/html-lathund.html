@@ -3,17 +3,15 @@
     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">
 	<head>
 	 <meta http-equiv="Content-Type" content="text/html charset=utf-8" />
-	  <link rel="stylesheet" type="text/css" href="lathund.css" />
-	 <title>Min bästa sida!</title>
+	  <link rel="stylesheet" type="text/css" href="../File/lathund.css" />
+	 <title>Min bästa sida om html!</title>
 	</head>
 	<body>
 	<h1>Lathund</h1>
 <div id="content" >
 <div id="introduction">
-<h2>Introduktion</h2>
-
 <div class="how-to">
-<h3>Intro till HTML</h3>
+<h2>Intro till HTML</h2>
 <p>
 Html kod används för att skapa en struktur för din information på en websida.
 </p>
@@ -71,50 +69,7 @@ Ett annat viktigt element är link, det bestämmer vilken css dokument du ska l�
  Om du vill veta mer om html så titta på <a href="http://www.w3schools.com/html/"> W3Schools webskola </a>.
 </p>
 </div>
-<div class="how-to">
-<h3>Intro till CSS</h3>
-<p>
-Ett CSS dokument består av ett antal regler. Varje regel består sedan av dels en selektor och ett deklarationsblock. 
-</p>
-<p>
-En selektor kan vara namnet på ett element. I följande kod är ”h1” en selektor som väljer ut h1 elementet från en html sida och gör så att textfärgen blir blå.
-</p>
-<code>
-h1  { color: blue;}
-</code>
-<p>
-En selektor kan också representera en identitet. Det motsvaras av html attribut ”id”. Två html element kan inte ha samma värde på ”id” attributet, det måste vara unikt.
-</p>
-<code>
-#item { color: blue;}
-</code>
-<p>
-En selektor kan också representera en klass. Det motsvaras av html attributet ”class”. Flera html element kan ha samma värde på ”class” attributet, där för kan det användas för att ge egenskaper till grupper av html element.
-</p>
-<code>
-.items { color: blue;}
-</code>
-<p>
-Deklarationsblocket är omgivet av fiskmåsparanteser och består av en eller flera egenskaper. Varje egenskap har ett namn och ett värde.
-</p>
-<pre>
-p {
-	border-width: 5pt;
-	border-style: solid;
-	border-color: black;
-	padding: 5pt;
-	display:box;
-	width: 500pt;
-}
-</pre>
-<p>
-I visa fall kan värdet ha enheter. Till exempel längder kan vi ange avstånd mellan block i cm, mm, px med mera. Nedan finns många olika css egenskaper beskrivna, sök gärna på internet efter fler.
-Om du vill veta mer om css så titta på <a href="http://www.w3schools.com/css/" >W3Schools webskola </a>.
-</p>
 
-
-
-</div>
 <h2>HTML Exempel</h2>
 
 <div class="example tag" >
@@ -148,8 +103,8 @@ Om du vill veta mer om css så titta på <a href="http://www.w3schools.com/css/"
 </div>
 
 <div class="example tag" >
-<h3>&lt;img src="helsingborg.jpg" alt="Helsingborg" width="150" height="150" /&gt;</h3>
-<p> <img src="helsingborg.jpg" alt="Helsingborg" width="150" height="150" /></p>
+<h3>&lt;img src="../File/helsingborg.jpg" alt="Helsingborg" width="150" height="150" /&gt;</h3>
+<p> <img src="../File/helsingborg.jpg" alt="Helsingborg" width="150" height="150" /></p>
 <p class="description" >Denna tagg gör så att du kan se en bild på sidan. Värdet <i>src</i> attributet ska vara namnet på bilden som du vill visa, bilden måste då ligga i samma katalog som webbsidan. Om du har bilden någon annan stans måste du i <i>src</i> skriva en sökväg dit. <i>alt</i> atributets värde ska vara en beskrivande text, så att även de som inte kan se bilden ändå förstår vad den handlar om.</p>
 </div>
 
@@ -206,112 +161,6 @@ Om du vill veta mer om css så titta på <a href="http://www.w3schools.com/css/"
 <br />
  </p>
 <p class="description" > <b>table</b>-taggen skapar en tabell. Rekomenderas ej, försök använd CSS istället.</p>
-</div>
-
-<h2><i>CSS Exmpel</i></h2>
-
-<p> Nedan följer några css exempel.
-</p>
-
-<div class="example style" >
-<h3> <b>color: green</b> </h3>
-<p><div style="color: green;" >Webben uppfanns på CERN!</div> </p>
-<p  class="description" >Sätter färgen som ska användas på texten.</p>
-</div>
-
-<div class="example style" >
-<h3> <b>background-color: green;</b> </h3>
-<p><div style="background-color: green;" >Webben uppfanns på CERN!</div> </p>
-<p  class="description" >Sätter färgen som ska användas på texten.</p>
-</div>
-
-<div class="example style" >
-<h3> <b>font-size:48pt</b> </h3>
-<p><div style="font-size:48pt;" >Webben uppfanns på CERN!</div> </p>
-<p  class="description" >Sätter storleken på teckensnittet. <i>pt</i> är en enhet för storleken på ett teckensnitt som liknar de storlekar du sätter på text i Word.</p>
-</div>
-
-<div class="example style" >
-<h3> <b>font-family: Impact, fantasy;</b> </h3>
-<p><div style="font-family: Impact, fantasy;" >Webben uppfanns på CERN!</div> </p>
-<p class="description" >Bestämmer vilken font som ska användas. Om den fonten <i>Impact</i> inte fanns på datorn, så skulle fonten <i>fantasy</i> användas.</p>
-</div>
-
-<div class="example style" >
-<h3> <b>border-style:solid;</b> </h3>
-<p><div style="border-style:solid;" >Webben uppfanns på CERN!</div> </p>
-<p class="description" >Används för att skapa en kant runt ett element. Det finns flera olika typer av kantlinjer: <i>dotted</i>, <i>dashed</i>, <i>groove</i>, <i>groove</i>, <i>inset</i>, <i>outset</i>. 
-</p>
-</div>
-
-<div class="example style" >
-<h3> <b>border-width:10pt;</b> </h3>
-<p><div style="border-style:solid; border-width:10pt;" >Webben uppfanns på CERN!</div> </p>
-<p class="description" > Används för att beskriva hur tjock en kantlinje ska vara. 
-</p>
-</div>
-
-<div class="example style" >
-<h3> <b>border-color:green;</b> </h3>
-<p><div style="border-style:solid; border-color:green;" >Webben uppfanns på CERN!</div> </p>
-<p class="description" > Används för att ge en färg åt en kantlinje. 
-</p>
-</div>
-
-<div class="example style" >
-<h3> <b>text-decoration:underline;</b> </h3>
-<p><div style="text-decoration:underline;" >Webben uppfanns på CERN!</div> </p>
-<p class="description" > Skapar text dekorationer på texten. De olika text dekorationerna heter: <i>overline</i>, <i>line-through</i>, <i>underline</i> och <i>blink</i>. <br /> Tänk på att undvika att använda <b style="text-decoration:blink" > blink </b> för det kan vara irriterande!
-</p>
-</div>
-
-<div class="example style" >
-<h3> <b>text-transform:uppercase;</b> </h3>
-<p><div style="text-transform:uppercase;" >Webben uppfanns på CERN!</div> </p>
-<p class="description" > Omvandlar texten på något sätt. De olika ovandlingarna kallas: <i>capitalize</i>, <i>lowercase</i> och <i>uppercase</i>.
-</p>
-</div>
-
-<div class="example style" >
-<h3> <b>text-shadow: 2px 2px 2px #000;</b> </h3>
-<p><div style="text-shadow: 2px 2px 2px #000;" >Webben uppfanns på CERN!</div> </p>
-<p class="description" > Skapar en skugga till texten. Pröva gärna med olika värden!
-</p>
-</div>
-
-<div class="example style" >
-<h3> <b>letter-spacing: 5px;</b> </h3>
-<p><div style="letter-spacing: 5px;" >Webben uppfanns på CERN!</div> </p>
-<p class="description" > Ändrar avståndet mellan bokstäverna. Går även med negativa värden!
-</p>
-</div>
-
-<div class="example style" >
-<h3> <b>word-spacing: 10em;</b> </h3>
-<p><div style="word-spacing: 10em;" >Webben uppfanns på CERN!</div> </p>
-<p class="description" > Ändrar avståndet mellan ord. Går även med negativa värden!
-</p>
-</div>
-
-<div class="example style" >
-<h3> <b>font-weight:bold;</b> </h3>
-<p><div style="font-weight:bold;" >Webben uppfanns på CERN!</div> </p>
-<p class="description" > Gör så att texten blir fet-stil. Det finns andra värden än <i>bold</i> men de fungerar bara med visa webbläsare och teckensnitt.
-</p>
-</div>
-
-<div class="example style" >
-<h3> <b>font-style:italic;</b> </h3>
-<p><div style="font-style:italic" >Webben uppfanns på CERN!</div> </p>
-<p class="description" > Gör så att texten blir kursiv. Det finns andra värden än <i>italic</i>, men det är ingen stor skillnad på dem.
-</p>
-</div>
-
-<div class="example style" >
-<h3> <b>text-align:center</b> </h3>
-<p><div width="150" style="text-align:center;" >Lorem ipsum dolor sit amet massa nunc urna nascetur. Elementum venenatis cursus. Pharetra cras ultricies. Interdum sed per hac eros in pharetra est id. At aenean egestas. Ornare proin sociis etiam et curabitur. Est proin mollis turpis senectus morbi suspendisse dui nisl. Potenti dignissim natoque. Risus vel lectus feugiat erat.</div> </p>
-<p class="description" > Gör så att texten blir centrerad. Finns också som <i>left</i> och <i>right</i>.
-</p>
 </div>
 
 </div>
