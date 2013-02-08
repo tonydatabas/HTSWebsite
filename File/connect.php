@@ -4,14 +4,14 @@ $user="root";
 $password="";
 $database="test";
 
-$link = mysql_connect($server, $user, $localhost);
+$link = mysql_connect($server, $user, $password);
 if (!$link) {
-    die('Could not connect: ' . mysql_error());
+    echo '<strong> Could not connect: ' . mysql_error() . '</strong>';
 }
-
-$db_selected = mysql_select_db($database);
-if($db_selected) {
-    die('Could not select database: ' . mysql_error());
+else {
+    $db_selected = mysql_select_db($database);
+    if(!$db_selected) {
+        echo '<strong> Could not select database: ' . mysql_error() . ' </strong>';
+    }
 }
-echo 'Connected successfully to database server';
 ?>
