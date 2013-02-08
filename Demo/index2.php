@@ -18,8 +18,25 @@ include '../File/connect.php';
                <div id="banner-right" >En banner till höger???</div>
             </div>
             <div id="left">
-					<div class="dokument-item">
-						Vänster kolumn!
+                     <div class="dokument-item">
+						<?php
+						$query = "SELECT id, namn FROM test";
+						//echo $query; 
+						$result = mysql_query($query) or die('Could : ' . mysql_error());
+						
+						$num=mysql_numrows($result);
+						if($num==0) {
+		                     echo '<strong>Your question is empty</strong>';
+						}
+						else {
+						echo "<ol>";
+						for ($i=0;$i<$num;$i++) {
+						     $temp = mysql_fetch_array($result);
+		                     echo "<li>" . $temp["namn"] . "</li>";
+	                    }
+	                    echo "</ol>";
+	                 }
+                     ?>
 					</div>
             </div>
             <div id="center">
@@ -27,24 +44,6 @@ include '../File/connect.php';
                 <div id="info">
 				<h1 class="dokument-item-header"> Webbsidans rubrik</h1>
 				<p class="info">Inledning på webbsidan.</p>
-				<?php
-				$query = "SELECT id, namn FROM test";
-                //echo $query; 
-                $result = mysql_query($query) or die('Could : ' . mysql_error());
-
-		$num=mysql_numrows($result);
-		if($num==0) {
-			echo '<strong>Your question is empty</strong>';
-		}
-		else {
-		echo "<ol>";
-		for ($i=0;$i<$num;$i++) {
-			$temp = mysql_fetch_array($result);
-			echo "<li>" . $temp["namn"] . "</li>";
-		}
-		echo "</ol>";
-		}
-		?>
 </div>
 </div>
             <div id="right">
