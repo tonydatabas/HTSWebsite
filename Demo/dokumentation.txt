@@ -1,0 +1,33 @@
+Min SchoolSoft dödare, medelarhanterare.
+
+En väldigt bra förklaring.
+
+Person
+*id
+*arLara 
+*altId
+*namn
+*alder
+*adress
+
+Lärare
+*id
+*legitimation
+
+Elever
+*id
+*klass
+
+Kurs
+*id
+*elev
+*larare
+*namn
+*betyg
+
+Medelanden
+*id
+*rubrik
+*text
+*fran
+*till
