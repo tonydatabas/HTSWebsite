@@ -132,6 +132,59 @@ body{
 }
 
 /***************************************
+ * För menyer
+ **************************************/
+.meny {
+    padding: 0;
+    margin: 0;
+    float: left;
+ }
+ 
+.meny .horizontal {
+}
+
+.meny ul{
+   margin: 0; 
+   padding: 0; 
+   float: left; 
+   width: 100%; 
+   background: #99CC99; 
+   font: 70% Verdana, Helvetica, sans-serif;
+}
+
+.meny li{
+   display: inline;
+}
+
+.meny ul a{
+    float: left;
+    text-decoration: none;
+    padding: 0.3em 2em;
+    border: 1px solid #99CC99;
+}
+    
+.meny a:link{
+    color: #000000;
+}
+
+.meny a:visited{
+    color: #000000;
+}
+
+.meny a:hover{
+    border: 1px solid #000000;
+}
+
+.meny a#current{
+    background: #D6EBD6;
+    color: #000000;
+}
+ 
+.meny .vertical {
+ 
+}
+ 
+/***************************************
  * För nyhetslistan på första sidan
  **************************************/
 
