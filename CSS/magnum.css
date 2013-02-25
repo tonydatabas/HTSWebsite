@@ -69,8 +69,8 @@ body{
 
 #content{
 	width: 995px;
-	height: 2000px;
-	margin: 0;
+	height: 1750px;
+	margin: 50px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -107,7 +107,7 @@ body{
 
 #center-right{
 	width: 714px;
-	height:1800px;
+	height:1600px;
 	float: left;
 	padding-top: 0px;
 	padding-bottom: 0px;
