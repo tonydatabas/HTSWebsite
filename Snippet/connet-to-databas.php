@@ -3,7 +3,7 @@
 include '../File/connect.php';
 ?>
 
-<!-- Detta här ska stå när du inte längre vill använda databasen.-->
+<!-- Detta här ska skrivas när du inte längre vill använda databasen.-->
 <?php
    mysql_close($con);
 ?>
