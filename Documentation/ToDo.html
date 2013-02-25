@@ -4,9 +4,35 @@
 	<head>
 	 <meta http-equiv="Content-Type" content="text/html charset=utf-8" />
 	  <link rel="stylesheet" type="text/css" href="../File/lathund.css" />
-	 <title>Min bästa sida om html!</title>
+	 <title>Vad som ska göras i databasprojektet.</title>
+	 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	 <script>
+	     $(document).ready(function() {
+         $("#expander ul").hide();
+         $("#expander h4").on("click", function(e) {
+
+        var $this = $(this);
+        var $nestList = $($this).parent().find("ul");
+        var $scrollPane = $(".scroll");
+
+        // hide visible nested lists
+        $("ul ul:visible").hide("fast", function(){
+            $(this).closest("li").removeClass("open").addClass("closed");
+        });
+        // show this list
+        $nestList.show("fast", function() {
+            $(this).closest("li").removeClass("closed").addClass("open");
+        });
+        // resize scrollbars
+        $scrollPane.jScrollPane();
+
+        e.preventDefault();
+    });
+	});
+	 </script>
 	</head>
 	<body>
+	
 	<h1>Vi har en plan.</h1>
 <div id="content" >
 <div id="introduction">
@@ -16,14 +42,29 @@
 Nedan följer en ungefärlig planering för databsarbetet som du kam följa. Du kan göra på andra sätt och använda andra programvara. Men observera att jag inte kan hjälpa dig då. Kom också ihåg att läsa igenom "HowToSolveIT".
 </p>
 
+<ul id="expander" >
+<li class="closed" ><h4>Hämta och anpassa Notepad++</h4>
+<ul><li>Gå till <a href="http://notepad-plus-plus.org/download/v6.3.html"> Notepad++ nedladningssida</a>.</li>
+<li>Klicka på länken "Notepad++ zip package" och ladda ned zip paketet.</li>
+<li>Öpnna zip arkivet i dit favorit zip-program (Det öppnas antagligen automatiskt).</li>
+<li>Kopiera mappen "unicode" till skrivbordet eller någon annastans där den sparas permanent och du kommer ihåg den.</li>
+<li> Dubbelklicka på "notepad+++.exe".
+<li>Du kan också döpa om "unicode" mappen till "notepad++" eller skapa en genväg till "notepad++.exe" filen om du vill.</li>
+</ul>
+</li>
+<li class="closed" ><h4>Hämta och anpassa Git</h4></li>
+<li class="closed" ><h4>Hämta och anpassa EasyPHP</h4></li>
+<li class="closed" ><h4>Skriv en beskrivning av din sajt.</h4></li>
+<li class="closed" ><h4>Skapa en databas för din sajt</h4>
 <ul>
-<li>Hämta och anpassa Notepad++</li>
-<li>Hämta och anpassa Git</li>
-<li>Hämta och anpassa EasyPHP</li>
-<li>Skriv en beskrivning av din sajt.</li>
-<li>Skapa en databas för din sajt</li>
-<li>Skapa en framsida med html</li>
-<li>Skapa en sida för varje tabell.</li>
+<li>Öppna phpMyAdmin, genom gåt till easyPHP admin (http://127.0.0.1:8888/home/) och välja "open" som finns vid "MySQL Administration" modulen. </li>
+<li>Skapa en databas. Välj gärna ett namn som liknar din sajt.</li>
+<li>Skapa tabbeler. Utgå från din dokumentation och din planering av sajten. Det går också att kompleter efterhand.</li>
+<li>Lägg till ett par exempel rader i varje tabell.</li>
+</ul>
+</li>
+<li class="closed" ><h4>Skapa en framsida med html.</h4></li>
+<li class="closed" ><h4>Skapa en sida för varje tabell.</h4></li>
 </ul>
 
 </div>
