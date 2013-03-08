@@ -1,5 +1,5 @@
 <?php
-         $query = "INSERT INTO Persons (name) VALUES ('$_POST[name]')";
+         $query = "INSERT INTO TestTable (Text, Number) VALUES ('$_POST[myText]', '$_POST[myNumber]')";
          //echo '<em> ' . $query . ' </em>';
          $result = mysql_query($query);
          if ($result === false) {

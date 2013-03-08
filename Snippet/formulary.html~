@@ -1,5 +1,0 @@
-<!-- Ett formulär -->
-<form action="insert.php" method="post">
-Namn: <input type="text" name="name">
-<input type="submit">
-</form>
