@@ -1,6 +1,5 @@
 <!-- Ett formulär -->
 <form action="insert.php" method="post">
-Text: <input type="text" name="name">
-Tal: <input type="text" name="name">
+Namn: <input type="text" name="name">
 <input type="submit">
 </form>
