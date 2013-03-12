@@ -6,7 +6,7 @@ include '../Demo/connect.php';
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">    
     <head>
         <meta http-equiv="Content-Type" content="text/html charset=utf-8" />
-        <link rel="stylesheet" title="magnum" type="text/css" href="../CSS/magnum.css" />
+        <link rel="stylesheet" title="magnum" type="text/css" href="../CSS/test.css" />
 		<link rel="alternate stylesheet" title="none" type="text/css" href="../CSS/empty.css.css" />	  
         <title>Skriv namnet på sidan här!</title>	
     </head>
@@ -23,16 +23,12 @@ include '../Demo/connect.php';
 					</div>
             </div>
             <div id="center-right">
-				<div id="info">
-				<h1 class="dokument-item-header"> Lista över elever</h1>
-				<p class="info">Detta är en lista över vilka elver som finns på skolan.</p>
-                </div>
-				<form action="insertElev.php" method="post">
-                Klass: <input type="text" name="myClass"> 
-                <input type="submit">
-                 </form>
+                <div id="info">
+				<h1 class="dokument-item-header"> Lärare i skolan</h1>
+				<p class="info">En lista över lärare i skolan</p>
+				
 				<?php
-         $query = "SELECT id, klass FROM elever";
+         $query = "SELECT personer.namn, personer.alder, larare.legitimation FROM `larare`, `personer` WHERE larare.id=personer.altid";
          //echo '<em> ' . $query . ' </em>';
          $result = mysql_query($query);
          if ($result === false) {
@@ -47,17 +43,16 @@ include '../Demo/connect.php';
              echo "<ul>";
              for ($i=0;$i<$num;$i++) {
                  $temp = mysql_fetch_array($result);
-	             echo "<li>" . $temp["id"]. " : " . $temp["klass"] . "</li>";
+	             echo "<li>" . $temp["namn"] . " : ". $temp["legitimation"] . " : ". $temp["alder"] . "</li>";
              }
              echo "</ul>";
         }
 ?>
+				
 </div>
 </div>
-
-
 			<div id="footer">
-				<p> &copy; 2013 Magnus Kronnäs
+				<p> &copy; 2013 Ditt namn här. Detta är en fotnot# 
 				</p>
 			</div>
         </div>

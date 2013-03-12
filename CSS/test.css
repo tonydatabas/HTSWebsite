@@ -1,0 +1,230 @@
+/***************************************
+ *Generell tagar för hela dokumentet
+ **************************************/
+body{
+	font-family: "Tahoma", "DejaVu Sans","Sans-Serif";
+	font-size: 10pt;
+}
+
+h1 {
+	font-size: 25pt;
+	text-align: center;
+}
+
+/***************************************
+ * För att få rätt bakgrunds färger
+ **************************************/
+
+/* background */
+body{
+	background-color: #0099CC;
+}
+
+/* column */
+#content, #left, #right, #frame, #footer {
+	background: #66CCFF;
+	}
+	
+/* Front */
+#center, #center-right {
+	background: #FFF;
+	}
+
+/* Spotlight */	
+#banner-right, #banner-left {
+	background-color: #003399;
+}	
+
+/***************************************
+ *Banner i topen av sidan.
+ **************************************/
+ 
+#banner-right, #banner-center, #banner-left, #top{
+	height:140px;
+	float: left;
+}
+
+#banner-right{
+	width: 250px;
+}
+
+#banner-center{
+	width: 495px;
+}
+
+#banner-left{
+	width: 250px;
+}
+
+/***************************************
+ * För layot som skapar strukturen och kolumnerna
+ * på en sida.
+ * Bra att komma ihåg: top, right, bottom, left
+ **************************************/
+ 
+#top{
+	width: 995px;
+	padding: 0;
+}
+
+#content{
+	width: 995px;
+	height: 1750px;
+	margin: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#left{
+	width: 240px;
+	float: left;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+#center{
+	width: 464px;
+	height:1600px;
+	float: left;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+#right{
+	width: 240px;
+	float: left;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+/* Alternatives to center and right */
+
+#center-right{
+	width: 714px;
+	height:1600px;
+	float: left;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/* Fotnote along the bottom of this page  */
+
+#footer {
+	clear: both;
+	border: black solid;
+	border-width: 2px 0px 0px 0px;
+	background: #f0f0f0;
+	margin: 0;
+	padding: 0;
+}
+
+#footer p  {
+	margin: 0;
+	padding: 0;
+}
+
+/***************************************
+ * För menyer
+ **************************************/
+.meny {
+    padding: 0;
+    margin: 0;
+    float: left;
+ }
+ 
+.meny .horizontal {
+}
+
+.meny ul{
+   margin: 0; 
+   padding: 0; 
+   float: left; 
+   width: 100%; 
+   background: #99CC99; 
+   font: 70% Verdana, Helvetica, sans-serif;
+}
+
+.meny li{
+   display: inline;
+}
+
+.meny ul a{
+    float: left;
+    text-decoration: none;
+    padding: 0.3em 2em;
+    border: 1px solid #99CC99;
+}
+    
+.meny a:link{
+    color: #000000;
+}
+
+.meny a:visited{
+    color: #000000;
+}
+
+.meny a:hover{
+    border: 1px solid #000000;
+}
+
+.meny a#current{
+    background: #D6EBD6;
+    color: #000000;
+}
+ 
+.meny .vertical {
+ 
+}
+ 
+/***************************************
+ * För nyhetslistan på första sidan
+ **************************************/
+
+#news-list  {
+	list-style:none;
+	float: left;
+	margin: 0;
+	padding:  0;
+}
+
+li.news-item {
+	margin: 10pt 0pt 20pt 0pt;
+	padding:  0;
+}
+
+img.news-image-item {
+	float: left;
+	margin: 5px;
+	padding:  0;
+}
+
+p.news-text {
+	margin: 0pt;
+	padding:  0;
+}
+
+#news-list  h3{
+	color: black;
+	font-weight: bold;
+	font-size: 15pt;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+#div.news-date  {
+	color: black;
+	font-style: oblique; 
+	font-size: 10pt;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
