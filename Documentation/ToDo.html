@@ -39,15 +39,15 @@
 <div>
 <h2>Steg för att klara av databasarbetet.</h2>
 <p>
-Nedan följer en ungefärlig planering för databsarbetet som du kam följa. Du kan göra på andra sätt och använda andra programvara. Men observera att jag inte kan hjälpa dig då. Kom också ihåg att läsa igenom "HowToSolveIT".
+Nedan följer en ungefärlig planering för databasarbetet som du kan följa. Du kan göra på andra sätt och använda andra programvara. Men observera att jag inte kan hjälpa dig då. Kom också ihåg att läsa igenom "HowToSolveIT".
 </p>
 
 <ul id="expander" >
 <li class="closed" ><h4>Hämta och anpassa Notepad++</h4>
-<ul><li>Gå till <a href="http://notepad-plus-plus.org/download/v6.3.html"> Notepad++ nedladningssida</a>.</li>
+<ul><li>Gå till <a href="http://notepad-plus-plus.org/download/v6.3.html"> Notepad++ nedladdningssida</a>.</li>
 <li>Klicka på länken "Notepad++ zip package" och ladda ned zip paketet.</li>
-<li>Öpnna zip arkivet i dit favorit zip-program (Det öppnas antagligen automatiskt).</li>
-<li>Kopiera mappen "unicode" till skrivbordet eller någon annastans där den sparas permanent och du kommer ihåg den.</li>
+<li>Öpna zip arkivet i dit favorit zip-program (Det öppnas antagligen automatiskt).</li>
+<li>Kopiera mappen "unicode" till skrivbordet eller någon annanstans där den sparas permanent och du kommer ihåg den.</li>
 <li> Dubbelklicka på "notepad+++.exe".</li>
 <li>Du kan också döpa om "unicode" mappen till "notepad++" eller skapa en genväg till "notepad++.exe" filen om du vill.</li>
 </ul>
@@ -56,26 +56,32 @@ Nedan följer en ungefärlig planering för databsarbetet som du kam följa. Du 
 <ul><li>Gå till <a href="http://code.google.com/p/msysgit/downloads/list?q=full+installer+official+git">Git för Windows (Msysgit)</a>.</li>
 <li>Klicka på länken "Git-1.8.0" och ladda ned exe filen</li>
 <li>OBS! Att vi inte behöver admin rättigheter för att installera detta program, så vi gör egentligen ingen "installation".</li>
-<li>Starta exe filen och gå igenom installationen. Välj att spara filerna i en map som du har rättigheter att spara i och som du alltid har tillgång till.</li>
+<li>Starta exe filen och gå igenom installationen. Välj att spara filerna i en mapp som du har rättigheter att spara i och som du alltid har tillgång till.</li>
 <li>Dubbelklicka på ikonen "Git Bash" som kommer upp på ditt skrivbord, alternativ sök efter detta program.</li>
 <li>I terminalen som nu öppnar sig. Skriv:<code> git clone https://github.com/{ditt användarnamn på github}/HTSWebsite</code></li>
 <li><code>cd HTSWebsite</code></li>
 <li><code>git remote addi hts-upstream https://github.com/magnuskronnas/HTSWebsite</code></li>
-<li><code>cp File/bashrc ./.bashrc </code></li>
-<li> Varje gång du börjar arbeta på din sajt skriv  <code>hts-start </code></li>
-<li> Varje gång du slutar arbeta på din sajt skriv  <code>hts-end </code></li>
+<li><code>cp File/bashrc   ./.bashrc </code></li>
+<li> Varje gång du börjar arbeta på din sajt skriv <code>hts-start </code></li>
+<li> Varje gång du slutar arbeta på din sajt skriv <code>hts-end </code></li>
 </ul>
 </li>
 <li class="closed" ><h4>Hämta och anpassa EasyPHP</h4>
 <ul>
 <li> Öppna sidan <a href="http://www.easyphp.org/">EasyPHP</a></li>
 <li> Ladda ned "EasyPHP DevServer".</li>
-<li> Kör exe-filen. Välj att spara filen i en map som du har rätt att spara filer i T. ex. "H:/"</li>
+<li> Kör exe-filen. Välj att spara filen i en mapp som du har rätt att spara filer i t.ex. "H:/"</li>
+<li> Klicka på ”Easy PHP” ikonen i aktivitetfältet</li>
+<li> Välja att starta ”Easy PHP” administrations sidan. </li>’
+<li> Skapa en ”short-cut”.  Denna ska ha en sökväg till där du har klonat HTSWebsite</li>
 </ul>
 </li>
 <li class="closed" ><h4>Skriv en beskrivning av din sajt.</h4>
 <ul>
-<li> Skriv en halv A4 och beskriv vad din sajt ska innehålla.</li>
+<li> I mappen HTSWebsite skapa en mapp med namnet på ditt projekt arbete. <li>
+<li> Skriv en halv A4 och beskriv vad din sajt ska innehålla. Spara gärna sidan som ett text dokument, dvs. med endelsen ”.txt”.</li>
+<li> När du skriver dokumentet fundera skärskilt igenom hur din databas ska se ut.<li>
+<li> Spara ditt dokument i mappen som du just har skapat.  Spara enligt instruktion i ” Hämta och anpassa Git”.  </li>
 </ul>
 </li>
 <li class="closed" ><h4>Skapa en databas för din sajt</h4>
@@ -95,7 +101,12 @@ Nedan följer en ungefärlig planering för databsarbetet som du kam följa. Du 
 </li>
 <li class="closed" ><h4>Skapa en egen CSS.</h4>
 <ul>
-<li> Skapa en egen CSS fil.</li>
+<li> Gå till mappen "CSS".</li>
+<li> Kopiera filen "magnum.css", du väljer själv vad den nya filen ska heta. Men den ska helst ligga i mappen "CSS".</li>
+<li> Öppna framsidan som du skapat i uppgiften ovan.</li>
+<li> I link-elementet ändra sökvägen så den pekar på din CSS fil.</li>
+<li> Du kan nu ändra i din CSS fil och dessa ändringar kommer att synas när du öppnar html filen i din webbrowser.</li>
+<li> Gör gärna ändringar på färg, teckensnitt, tjocklek och typ av linje samt tecken effekter. Se lathunden för CSS, där kan du få inspiration. Men var försiktig med att ändra "height " och "width" egenskaperna eftersom det kan göra så layouten blir dålig.</li>
 </ul>
 </li>
 <li class="closed" ><h4>Skapa en sida för varje tabell.</h4>
@@ -103,12 +114,12 @@ Nedan följer en ungefärlig planering för databsarbetet som du kam följa. Du 
 <li> Välj en tabell och visa upp innehållet på en sida.</li>
 </ul>
 </li>
-<li class="closed" ><h4>Skapa ett formuler för varje tabell.</h4>
+<li class="closed" ><h4>Skapa ett formulär för varje tabell.</h4>
 <ul>
-<li> Skapa ett formuler för varje tabell.</li>
+<li> Skapa ett formulär för tabellen.</li>
 </ul>
 </li>
-<li class="closed" ><h4>Lägg till inloggningsfunktion.</h4></li>
+<li class="closed" ><h4>Lägg till inloggningsfunktion.</h4>
 <ul>
 <li> Se till att bara inloggade kan skriva in information.</li>
 </ul>
