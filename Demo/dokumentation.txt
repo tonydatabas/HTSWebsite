@@ -2,7 +2,7 @@ Min SchoolSoft dödare, medelarhanterare.
 
 En väldigt bra förklaring.
 
-Person
+Personer
 *id
 *arLara 
 *altId
