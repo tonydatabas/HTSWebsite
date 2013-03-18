@@ -1,4 +1,11 @@
 ﻿<?php
+session_start();
+if(!isset($_SESSION['session_user'])){
+	header('Location: login.php');
+	die;
+}
+?>
+<?php
 include '../Demo/connect.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
