@@ -72,15 +72,15 @@ Nedan följer en ungefärlig planering för databasarbetet som du kan följa. Du
 <li> Ladda ned "EasyPHP DevServer".</li>
 <li> Kör exe-filen. Välj att spara filen i en mapp som du har rätt att spara filer i t.ex. "H:/"</li>
 <li> Klicka på ”Easy PHP” ikonen i aktivitetfältet</li>
-<li> Välja att starta ”Easy PHP” administrations sidan. </li>’
+<li> Välja att starta ”Easy PHP” administrations sidan. </li>
 <li> Skapa en ”short-cut”.  Denna ska ha en sökväg till där du har klonat HTSWebsite</li>
 </ul>
 </li>
 <li class="closed" ><h4>Skriv en beskrivning av din sajt.</h4>
 <ul>
-<li> I mappen HTSWebsite skapa en mapp med namnet på ditt projekt arbete. <li>
+<li> I mappen HTSWebsite skapa en mapp med namnet på ditt projekt arbete. </li>
 <li> Skriv en halv A4 och beskriv vad din sajt ska innehålla. Spara gärna sidan som ett text dokument, dvs. med endelsen ”.txt”.</li>
-<li> När du skriver dokumentet fundera skärskilt igenom hur din databas ska se ut.<li>
+<li> När du skriver dokumentet fundera skärskilt igenom hur din databas ska se ut.</li>
 <li> Spara ditt dokument i mappen som du just har skapat.  Spara enligt instruktion i ” Hämta och anpassa Git”.  </li>
 </ul>
 </li>
@@ -88,14 +88,15 @@ Nedan följer en ungefärlig planering för databasarbetet som du kan följa. Du
 <ul>
 <li>Öppna phpMyAdmin, genom gåt till easyPHP admin (http://127.0.0.1:8888/home/) och välja "open" som finns vid "MySQL Administration" modulen. </li>
 <li>Skapa en databas. Välj gärna ett namn som liknar din sajt.</li>
-<li>Skapa tabbeler. Utgå från din dokumentation och din planering av sajten. Det går också att kompleter efterhand.</li>
+<li>Skapa tabbeler. Utgå från din dokumentation och din planering av sajten. Det går också att komplettera i efterhand.</li>
+<li> Till varje tabell lägg till en kolumn ”id”, denna kolumn ska vara av typen ”int” och du sk välja till att den ska vara ”primary” index och A.I. (Auto Increase).</ li>
 <li>Lägg till ett par exempel rader i varje tabell.</li>
 </ul>
 </li>
 <li class="closed" ><h4>Skapa en framsida med html.</h4>
 <ul>
 <li>Titta igenom html sidorna i mappen "Template". Välj någon som kan vara till grund för din idé. </li>
-<li>Kopierna denna sida till din sajt mapp och ge den namnet "index.html".</li>
+<li>Kopiera denna sida till din sajt mapp och ge den namnet "index.html".</li>
 <li>Ändra innehållet i sidan till det du vill ha. Kom skärskilt ihåg att ändra "title" elementet. Se lathunden för html om du har problem.</li>
 </ul>
 </li>
@@ -106,12 +107,22 @@ Nedan följer en ungefärlig planering för databasarbetet som du kan följa. Du
 <li> Öppna framsidan som du skapat i uppgiften ovan.</li>
 <li> I link-elementet ändra sökvägen så den pekar på din CSS fil.</li>
 <li> Du kan nu ändra i din CSS fil och dessa ändringar kommer att synas när du öppnar html filen i din webbrowser.</li>
-<li> Gör gärna ändringar på färg, teckensnitt, tjocklek och typ av linje samt tecken effekter. Se lathunden för CSS, där kan du få inspiration. Men var försiktig med att ändra "height " och "width" egenskaperna eftersom det kan göra så layouten blir dålig.</li>
+<li> Gör gärna ändringar på färg, teckensnitt, tjocklek och typ av linje samt tecken effekter. Se lathunden för CSS, där kan du få inspiration. Men var försiktig med att ändra ”margin”, ”padding”, "height " och "width" egenskaperna eftersom det kan göra så layouten blir dålig.</li>
 </ul>
 </li>
 <li class="closed" ><h4>Skapa en sida för varje tabell.</h4>
 <ul>
-<li> Välj en tabell och visa upp innehållet på en sida.</li>
+<li> Välj en tabell vars innehåll en användare av sajten behöver se.</li>
+<li> Kopiera en gammal sida som du vill utgå ifrån. Välj ett lämpligt namn.</li>
+<li> Eftersom vi ska ha med php kod, så döp om sidan så att den får filändelsen ”.php”.</li>
+<li> Kopiera en gammal sida som du vill utgå ifrån. Välj ett lämpligt namn.</li>
+<li>Modifiera sidan så den passar in i din sajt och den uppgift som den har.</li>
+<li> Till att börja med så måste vi ansluta till databasen. Kopiera filen ”File/connect.php” till din mapp.</li>
+<li> Öppna filen ”connect.php”. Du hittar en rad <code>$database="test"; </code>. Denna rad avgör vilken databas du ska öppna. </li>
+<li>Byt ut ”test” mot namnet på din databas.   </li>
+<li> Kopiera nu den översta koden i snippet  ”connection-to-databas.php” och lägg den överst i den sida där du vill ha tabellen.</li>
+<li> Kopiera in koden i snippet ”SQL-list.php” till där det passar att du visar upp en tabell på sidan.</li>
+<li> Nu ska du ändra i ”question”  variabeln så du får  rätt tabellnamn i din SQL-fråga.</li>
 </ul>
 </li>
 <li class="closed" ><h4>Skapa ett formulär för varje tabell.</h4>
