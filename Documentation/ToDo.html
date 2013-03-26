@@ -127,17 +127,30 @@ Nedan följer en ungefärlig planering för databasarbetet som du kan följa. Du
 </li>
 <li class="closed" ><h4>Skapa ett formulär för varje tabell.</h4>
 <ul>
-<li> Skapa ett formulär för tabellen.</li>
+<li> Bestäm en tabell som du vill lägga in värden som användaren av din sajt skriver in. </li>
+<li> Kopiera en sida att utgå ifrån, antingen din index sida eller någon ifrån template mappen. </li>
+<li> Kopiera innehållet i snippet formulary.html till var du vill ha ditt formulär. </li>
+<li> Du behöver anpassa formuläret så du får med alla uppgifter du vill ha och det ser snyggt ut. Se nedan.  </li>
+<li> För varje kolumn i din SQL tabell lägg till en rad i formuläret.  Titta på koden så ser du hur man gör.</li>
+<li> Observera att du ska ändra attributet namn på varje input-element, så att input elementet får ett unikt namn. Namnet ska också gärna förklara vad för data man ska skriva in i input-elementet.</li>
+<li> Försök att få formuläret att se snyggt ut, använd ”<br />” eller ”<span  />” för att anpassa inskrivningsfälten till varandra. </li>
+<li> Bestäm vilken fil som ska ta emot data ifrån formuläret.  Det kan vara filen som du har formuläret du skrivit in eller någon annan fil.</li>
+<li>Kopiera koden ifrån snippet login.php till filen du valt.</li>
+<li> I den första if-satsen lägg till alla namn från input-elementen.</li>
+<li> Anpassa SQL-frågan så att den stämmer överens med din tabell. Experimentera gärna med MyPHPadmin för att hitta rätt fråga.</li>
 </ul>
 </li>
 <li class="closed" ><h4>Lägg till inloggningsfunktion.</h4>
 <ul>
-<li> Se till att bara inloggade kan skriva in information.</li>
+<li> Kopiera login.html till din sajt.</li>
+<li> Kopiera login.php till din sajt.</li>
+<li> Klistra ini checkLogin.php överst i alla sidor som ska skyddas..</li>
 </ul>
 </li>
 <li class="closed" ><h4>Bind samman alla sidor med länkar.</h4>
 <ul>
-<li> Gör om dina sidor till en sajt.</li>
+<li> Klistar in meny.html i dina sidor.</li>
+<li> Lägg till alla andra sidor som länkar.</li>
 </ul>
 </li>
 </ul>
@@ -145,4 +158,3 @@ Nedan följer en ungefärlig planering för databasarbetet som du kan följa. Du
 </div>
 </body>
 </html>
-
