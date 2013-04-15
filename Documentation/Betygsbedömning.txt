@@ -1,0 +1,39 @@
+G
+
+Se till att du har löst alla uppgifter i ToDo före den 28 april.
+
+* Göra en sökning utifrån ett inmatningsfält.
+-- Använd ett inmatningsfällt så som i "Skapa ett formulär för varje tabell" för att få något du kan söka på. 
+-- Gör ett SQL fråga med hjälp av detta värde och visa resultatet av denna SQL sökning, så som i "Skapa en sida för varje tabell".
+-- Exempel om du har en tabell med personer och vilken ort personen bor i. Om då användaren skriver in en ort, kan du visa alla personer som kommer från den orten.
+* Förhindra alla SQL injektion attacker som kan riktas mot din hemsida.
+* Gör så att eventuella lösenord som sparas på sidan skyddas med kryptering.
+* Visa statistik utifrån minst en av dina tabeller.
+   -- Använd SQL för att 
+* Svara på frågorna i rapporten på G nivån. 
+   --  Beskriv två sajt som du har använd för att lösa problem som du har stött på.
+   --  Berätta lite översiktligt om vad varje tabell gör i din sajt.
+
+
+VG
+
+Klara först alla uppgifter på G-nivån.
+Uppgifterna nedan ska sedan lösas utan att fråga mig om hjälp.
+* Gjorde åtminstone fyra inmatningsformulär.
+* Åtminstone tre datapresentationer.
+* I en av dessa ska data vara sorterade. 
+* Svara på frågorna i rapporten på VG nivå.  
+  – Redovisa hur du har använt information från minst tre olika sajter i din kod.
+
+MVG
+
+
+Klara först alla uppfiter på G-nivån och VG-nivån.
+I uppgifterna nedan ska du visa på stor självständighet när du löser dem. Du ska också arbeta snabbt och effektivt.
+* Presentera din sida muntligt för mig och en mindre grupp av dina klasskamrater.
+* Förverkliga  en webbsajt som fungerar till det du har tänkt dig.
+* Sajten ska innehålla ett flertal tabeller som användaren kan addera information till, samt söka i och få rapporter och statistik ifrån. Dessa ska fungera bra tillsammans som en helhet.
+* * Svara på frågorna i rapporten på MVG nivå.  
+  -- Förklara vilken data man inte får ha i en databas, motivera detta utifrån olika källor. Förklara särskilt varför källorna du använt är trovärdiga.
+  -- Beskriv hur den användare ser ut som ska använda din sajt, hur kommer denna att använda sajten.
+
