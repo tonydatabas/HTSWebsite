@@ -1,4 +1,4 @@
-echo "Försöker uppdatera alla gemensamma filer."
+﻿echo "Uppdatera alla gemensamma filer."
 git fetch origin;
 git merge origin/master;     
 
