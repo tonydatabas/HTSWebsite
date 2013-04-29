@@ -1,10 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+ï»¿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
 		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">
 	<head>
 	 <meta http-equiv="Content-Type" content="text/html charset=utf-8" />
 	  <link rel="stylesheet" type="text/css" href="../File/lathund.css" />
-	 <title>Vad som ska göras i databasprojektet.</title>
+	 <title>Vad som ska gÃ¶ras i databasprojektet.</title>
 	 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	 <script>
 	     $(document).ready(function() {
@@ -37,119 +37,119 @@
 <div id="content" >
 <div id="introduction">
 <div>
-<h2>Steg för att klara av databasarbetet.</h2>
+<h2>Steg fÃ¶r att klara av databasarbetet.</h2>
 <p>
-Nedan följer en ungefärlig planering för databasarbetet som du kan följa. Du kan göra på andra sätt och använda andra programvara. Men observera att jag inte kan hjälpa dig då. Kom också ihåg att läsa igenom "HowToSolveIT".
+Nedan fÃ¶ljer en ungefÃ¤rlig planering fÃ¶r databasarbetet som du kan fÃ¶lja. Du kan gÃ¶ra pÃ¥ andra sÃ¤tt och anvÃ¤nda andra programvara. Men observera att jag inte kan hjÃ¤lpa dig dÃ¥. Kom ocksÃ¥ ihÃ¥g att lÃ¤sa igenom "HowToSolveIT".
 </p>
 
 <ul id="expander" >
-<li class="closed" ><h4>Hämta och anpassa Notepad++</h4>
-<ul><li>Gå till <a href="http://notepad-plus-plus.org/download/v6.3.html"> Notepad++ nedladdningssida</a>.</li>
-<li>Klicka på länken "Notepad++ zip package" och ladda ned zip paketet.</li>
-<li>Öpna zip arkivet i dit favorit zip-program (Det öppnas antagligen automatiskt).</li>
-<li>Kopiera mappen "unicode" till skrivbordet eller någon annanstans där den sparas permanent och du kommer ihåg den.</li>
-<li> Dubbelklicka på "notepad+++.exe".</li>
-<li>Du kan också döpa om "unicode" mappen till "notepad++" eller skapa en genväg till "notepad++.exe" filen om du vill.</li>
+<li class="closed" ><h4>HÃ¤mta och anpassa Notepad++</h4>
+<ul><li>GÃ¥ till <a href="http://notepad-plus-plus.org/download/v6.3.html"> Notepad++ nedladdningssida</a>.</li>
+<li>Klicka pÃ¥ lÃ¤nken "Notepad++ zip package" och ladda ned zip paketet.</li>
+<li>Ã–pna zip arkivet i dit favorit zip-program (Det Ã¶ppnas antagligen automatiskt).</li>
+<li>Kopiera mappen "unicode" till skrivbordet eller nÃ¥gon annanstans dÃ¤r den sparas permanent och du kommer ihÃ¥g den.</li>
+<li> Dubbelklicka pÃ¥ "notepad+++.exe".</li>
+<li>Du kan ocksÃ¥ dÃ¶pa om "unicode" mappen till "notepad++" eller skapa en genvÃ¤g till "notepad++.exe" filen om du vill.</li>
 </ul>
 </li>
-<li class="closed" ><h4>Hämta och anpassa Git</h4>
-<ul><li>Gå till <a href="http://code.google.com/p/msysgit/downloads/list?q=full+installer+official+git">Git för Windows (Msysgit)</a>.</li>
-<li>Klicka på länken "Git-1.8.0" och ladda ned exe filen</li>
-<li>OBS! Att vi inte behöver admin rättigheter för att installera detta program, så vi gör egentligen ingen "installation".</li>
-<li>Starta exe filen och gå igenom installationen. Välj att spara filerna i en mapp som du har rättigheter att spara i och som du alltid har tillgång till.</li>
-<li>Dubbelklicka på ikonen "Git Bash" som kommer upp på ditt skrivbord, alternativ sök efter detta program.</li>
-<li>I terminalen som nu öppnar sig. Skriv:<code> git clone https://github.com/{ditt användarnamn på github}/HTSWebsite</code></li>
+<li class="closed" ><h4>HÃ¤mta och anpassa Git</h4>
+<ul><li>GÃ¥ till <a href="http://code.google.com/p/msysgit/downloads/list?q=full+installer+official+git">Git fÃ¶r Windows (Msysgit)</a>.</li>
+<li>Klicka pÃ¥ lÃ¤nken "Git-1.8.0" och ladda ned exe filen</li>
+<li>OBS! Att vi inte behÃ¶ver admin rÃ¤ttigheter fÃ¶r att installera detta program, sÃ¥ vi gÃ¶r egentligen ingen "installation".</li>
+<li>Starta exe filen och gÃ¥ igenom installationen. VÃ¤lj att spara filerna i en mapp som du har rÃ¤ttigheter att spara i och som du alltid har tillgÃ¥ng till.</li>
+<li>Dubbelklicka pÃ¥ ikonen "Git Bash" som kommer upp pÃ¥ ditt skrivbord, alternativ sÃ¶k efter detta program.</li>
+<li>I terminalen som nu Ã¶ppnar sig. Skriv:<code> git clone https://github.com/{ditt anvÃ¤ndarnamn pÃ¥ github}/HTSWebsite</code></li>
 <li><code>cd HTSWebsite</code></li>
 <li><code>git remote addi hts-upstream https://github.com/magnuskronnas/HTSWebsite</code></li>
 <li><code>cp File/bashrc   ./.bashrc </code></li>
-<li> Varje gång du börjar arbeta på din sajt skriv <code>hts-start </code></li>
-<li> Varje gång du slutar arbeta på din sajt skriv <code>hts-end </code></li>
+<li> Varje gÃ¥ng du bÃ¶rjar arbeta pÃ¥ din sajt skriv <code>hts-start </code></li>
+<li> Varje gÃ¥ng du slutar arbeta pÃ¥ din sajt skriv <code>hts-end </code></li>
 </ul>
 </li>
-<li class="closed" ><h4>Hämta och anpassa EasyPHP</h4>
+<li class="closed" ><h4>HÃ¤mta och anpassa EasyPHP</h4>
 <ul>
-<li> Öppna sidan <a href="http://www.easyphp.org/">EasyPHP</a></li>
+<li> Ã–ppna sidan <a href="http://www.easyphp.org/">EasyPHP</a></li>
 <li> Ladda ned "EasyPHP DevServer".</li>
-<li> Kör exe-filen. Välj att spara filen i en mapp som du har rätt att spara filer i t.ex. "H:/"</li>
-<li> Klicka på ”Easy PHP” ikonen i aktivitetfältet</li>
-<li> Välja att starta ”Easy PHP” administrations sidan. </li>
-<li> Skapa en ”short-cut”.  Denna ska ha en sökväg till där du har klonat HTSWebsite</li>
+<li> KÃ¶r exe-filen. VÃ¤lj att spara filen i en mapp som du har rÃ¤tt att spara filer i t.ex. "H:/"</li>
+<li> Klicka pÃ¥ â€Easy PHPâ€ ikonen i aktivitetfÃ¤ltet</li>
+<li> VÃ¤lja att starta â€Easy PHPâ€ administrations sidan. </li>
+<li> Skapa en â€short-cutâ€.  Denna ska ha en sÃ¶kvÃ¤g till dÃ¤r du har klonat HTSWebsite</li>
 </ul>
 </li>
 <li class="closed" ><h4>Skriv en beskrivning av din sajt.</h4>
 <ul>
-<li> I mappen HTSWebsite skapa en mapp med namnet på ditt projekt arbete. </li>
-<li> Skriv en halv A4 och beskriv vad din sajt ska innehålla. Spara gärna sidan som ett text dokument, dvs. med endelsen ”.txt”.</li>
-<li> När du skriver dokumentet fundera skärskilt igenom hur din databas ska se ut.</li>
-<li> Spara ditt dokument i mappen som du just har skapat.  Spara enligt instruktion i ” Hämta och anpassa Git”.  </li>
+<li> I mappen HTSWebsite skapa en mapp med namnet pÃ¥ ditt projekt arbete. </li>
+<li> Skriv en halv A4 och beskriv vad din sajt ska innehÃ¥lla. Spara gÃ¤rna sidan som ett text dokument, dvs. med endelsen â€.txtâ€.</li>
+<li> NÃ¤r du skriver dokumentet fundera skÃ¤rskilt igenom hur din databas ska se ut.</li>
+<li> Spara ditt dokument i mappen som du just har skapat.  Spara enligt instruktion i â€ HÃ¤mta och anpassa Gitâ€.  </li>
 </ul>
 </li>
-<li class="closed" ><h4>Skapa en databas för din sajt</h4>
+<li class="closed" ><h4>Skapa en databas fÃ¶r din sajt</h4>
 <ul>
-<li>Öppna phpMyAdmin, genom gåt till easyPHP admin (http://127.0.0.1:8888/home/) och välja "open" som finns vid "MySQL Administration" modulen. </li>
-<li>Skapa en databas. Välj gärna ett namn som liknar din sajt.</li>
-<li>Skapa tabbeler. Utgå från din dokumentation och din planering av sajten. Det går också att komplettera i efterhand.</li>
-<li> Till varje tabell lägg till en kolumn ”id”, denna kolumn ska vara av typen ”int” och du sk välja till att den ska vara ”primary” index och A.I. (Auto Increase).</ li>
-<li>Lägg till ett par exempel rader i varje tabell.</li>
+<li>Ã–ppna phpMyAdmin, genom gÃ¥t till easyPHP admin (http://127.0.0.1:8888/home/) och vÃ¤lja "open" som finns vid "MySQL Administration" modulen. </li>
+<li>Skapa en databas. VÃ¤lj gÃ¤rna ett namn som liknar din sajt.</li>
+<li>Skapa tabbeler. UtgÃ¥ frÃ¥n din dokumentation och din planering av sajten. Det gÃ¥r ocksÃ¥ att komplettera i efterhand.</li>
+<li> Till varje tabell lÃ¤gg till en kolumn â€idâ€, denna kolumn ska vara av typen â€intâ€ och du sk vÃ¤lja till att den ska vara â€primaryâ€ index och A.I. (Auto Increase).</ li>
+<li>LÃ¤gg till ett par exempel rader i varje tabell.</li>
 </ul>
 </li>
 <li class="closed" ><h4>Skapa en framsida med html.</h4>
 <ul>
-<li>Titta igenom html sidorna i mappen "Template". Välj någon som kan vara till grund för din idé. </li>
+<li>Titta igenom html sidorna i mappen "Template". VÃ¤lj nÃ¥gon som kan vara till grund fÃ¶r din idÃ©. </li>
 <li>Kopiera denna sida till din sajt mapp och ge den namnet "index.html".</li>
-<li>Ändra innehållet i sidan till det du vill ha. Kom skärskilt ihåg att ändra "title" elementet. Se lathunden för html om du har problem.</li>
+<li>Ã„ndra innehÃ¥llet i sidan till det du vill ha. Kom skÃ¤rskilt ihÃ¥g att Ã¤ndra "title" elementet. Se lathunden fÃ¶r html om du har problem.</li>
 </ul>
 </li>
 <li class="closed" ><h4>Skapa en egen CSS.</h4>
 <ul>
-<li> Gå till mappen "CSS".</li>
-<li> Kopiera filen "magnum.css", du väljer själv vad den nya filen ska heta. Men den ska helst ligga i mappen "CSS".</li>
-<li> Öppna framsidan som du skapat i uppgiften ovan.</li>
-<li> I link-elementet ändra sökvägen så den pekar på din CSS fil.</li>
-<li> Du kan nu ändra i din CSS fil och dessa ändringar kommer att synas när du öppnar html filen i din webbrowser.</li>
-<li> Gör gärna ändringar på färg, teckensnitt, tjocklek och typ av linje samt tecken effekter. Se lathunden för CSS, där kan du få inspiration. Men var försiktig med att ändra ”margin”, ”padding”, "height " och "width" egenskaperna eftersom det kan göra så layouten blir dålig.</li>
+<li> GÃ¥ till mappen "CSS".</li>
+<li> Kopiera filen "magnum.css", du vÃ¤ljer sjÃ¤lv vad den nya filen ska heta. Men den ska helst ligga i mappen "CSS".</li>
+<li> Ã–ppna framsidan som du skapat i uppgiften ovan.</li>
+<li> I link-elementet Ã¤ndra sÃ¶kvÃ¤gen sÃ¥ den pekar pÃ¥ din CSS fil.</li>
+<li> Du kan nu Ã¤ndra i din CSS fil och dessa Ã¤ndringar kommer att synas nÃ¤r du Ã¶ppnar html filen i din webbrowser.</li>
+<li> GÃ¶r gÃ¤rna Ã¤ndringar pÃ¥ fÃ¤rg, teckensnitt, tjocklek och typ av linje samt tecken effekter. Se lathunden fÃ¶r CSS, dÃ¤r kan du fÃ¥ inspiration. Men var fÃ¶rsiktig med att Ã¤ndra â€marginâ€, â€paddingâ€, "height " och "width" egenskaperna eftersom det kan gÃ¶ra sÃ¥ layouten blir dÃ¥lig.</li>
 </ul>
 </li>
-<li class="closed" ><h4>Skapa en sida för en tabell.</h4>
+<li class="closed" ><h4>Skapa en sida fÃ¶r en tabell.</h4>
 <ul>
-<li> Välj en tabell vars innehåll en användare av sajten behöver se.</li>
-<li> Kopiera en gammal sida som du vill utgå ifrån. Välj ett lämpligt namn.</li>
-<li> Eftersom vi ska ha med php kod, så döp om sidan så att den får filändelsen ”.php”.</li>
-<li> Modifiera sidan så den passar in i din sajt och den uppgift som den har.</li>
-<li> Till att börja med så måste vi ansluta till databasen. Kopiera filen ”File/connect.php” till din mapp.</li>
-<li> Öppna filen ”connect.php”. Du hittar en rad <code>$database="test"; </code>. Denna rad avgör vilken databas du ska öppna. </li>
-<li> Byt ut ”test” mot namnet på din databas.   </li>
-<li> Kopiera nu den översta koden i snippet  ”connection-to-databas.php” och lägg den överst i den sida där du vill ha tabellen.</li>
-<li> Kopiera in koden i snippet ”SQL-list.php” till där det passar att du visar upp en tabell på sidan.</li>
-<li> Nu ska du ändra i ”question”  variabeln så du får  rätt tabellnamn i din SQL-fråga.</li>
+<li> VÃ¤lj en tabell vars innehÃ¥ll en anvÃ¤ndare av sajten behÃ¶ver se.</li>
+<li> Kopiera en gammal sida som du vill utgÃ¥ ifrÃ¥n. VÃ¤lj ett lÃ¤mpligt namn.</li>
+<li> Eftersom vi ska ha med php kod, sÃ¥ dÃ¶p om sidan sÃ¥ att den fÃ¥r filÃ¤ndelsen â€.phpâ€.</li>
+<li> Modifiera sidan sÃ¥ den passar in i din sajt och den uppgift som den har.</li>
+<li> Till att bÃ¶rja med sÃ¥ mÃ¥ste vi ansluta till databasen. Kopiera filen â€File/connect.phpâ€ till din mapp.</li>
+<li> Ã–ppna filen â€connect.phpâ€. Du hittar en rad <code>$database="test"; </code>. Denna rad avgÃ¶r vilken databas du ska Ã¶ppna. </li>
+<li> Byt ut â€testâ€ mot namnet pÃ¥ din databas.   </li>
+<li> Kopiera nu den Ã¶versta koden i snippet  â€connection-to-databas.phpâ€ och lÃ¤gg den Ã¶verst i den sida dÃ¤r du vill ha tabellen.</li>
+<li> Kopiera in koden i snippet â€SQL-list.phpâ€ till dÃ¤r det passar att du visar upp en tabell pÃ¥ sidan.</li>
+<li> Nu ska du Ã¤ndra i â€questionâ€  variabeln sÃ¥ du fÃ¥r  rÃ¤tt tabellnamn i din SQL-frÃ¥ga.</li>
 </ul>
 </li>
-<li class="closed" ><h4>Skapa ett formulär för en tabell.</h4>
+<li class="closed" ><h4>Skapa ett formulÃ¤r fÃ¶r en tabell.</h4>
 <ul>
-<li> Bestäm en tabell som du vill lägga in värden som användaren av din sajt skriver in. </li>
-<li> Kopiera en sida att utgå ifrån, antingen din index sida eller någon ifrån template mappen. </li>
-<li> Kopiera innehållet i snippet formulary.html till var du vill ha ditt formulär. </li>
-<li> Du behöver anpassa formuläret så du får med alla uppgifter du vill ha och det ser snyggt ut. Se nedan.  </li>
-<li> För varje kolumn i din SQL tabell lägg till en rad i formuläret.  Titta på koden så ser du hur man gör.</li>
-<li> Observera att du ska ändra attributet namn på varje input-element, så att input elementet får ett unikt namn. Namnet ska också gärna förklara vad för data man ska skriva in i input-elementet.</li>
-<li> Försök att få formuläret att se snyggt ut, använd ”<br />” eller ”<span  />” för att anpassa inskrivningsfälten till varandra. </li>
-<li> Bestäm vilken fil som ska ta emot data ifrån formuläret.  Det kan vara filen som du har formuläret du skrivit in eller någon annan fil.</li>
-<li>Kopiera koden ifrån snippet input.php till filen du valt.</li>
-<li> I den första if-satsen lägg till alla namn från input-elementen.</li>
-<li> Anpassa SQL-frågan så att den stämmer överens med din tabell. Experimentera gärna med MyPHPadmin för att hitta rätt fråga.</li>
+<li> BestÃ¤m en tabell som du vill lÃ¤gga in vÃ¤rden som anvÃ¤ndaren av din sajt skriver in. </li>
+<li> Kopiera en sida att utgÃ¥ ifrÃ¥n, antingen din index sida eller nÃ¥gon ifrÃ¥n template mappen. </li>
+<li> Kopiera innehÃ¥llet i snippet formulary.html till var du vill ha ditt formulÃ¤r. </li>
+<li> Du behÃ¶ver anpassa formulÃ¤ret sÃ¥ du fÃ¥r med alla uppgifter du vill ha och det ser snyggt ut. Se nedan.  </li>
+<li> FÃ¶r varje kolumn i din SQL tabell lÃ¤gg till en rad i formulÃ¤ret.  Titta pÃ¥ koden sÃ¥ ser du hur man gÃ¶r.</li>
+<li> Observera att du ska Ã¤ndra attributet namn pÃ¥ varje input-element, sÃ¥ att input elementet fÃ¥r ett unikt namn. Namnet ska ocksÃ¥ gÃ¤rna fÃ¶rklara vad fÃ¶r data man ska skriva in i input-elementet.</li>
+<li> FÃ¶rsÃ¶k att fÃ¥ formulÃ¤ret att se snyggt ut, anvÃ¤nd â€<br />â€ eller â€<span  />â€ fÃ¶r att anpassa inskrivningsfÃ¤lten till varandra. </li>
+<li> BestÃ¤m vilken fil som ska ta emot data ifrÃ¥n formulÃ¤ret.  Det kan vara filen som du har formulÃ¤ret du skrivit in eller nÃ¥gon annan fil.</li>
+<li>Kopiera koden ifrÃ¥n snippet input.php till filen du valt.</li>
+<li> I den fÃ¶rsta if-satsen lÃ¤gg till alla namn frÃ¥n input-elementen.</li>
+<li> Anpassa SQL-frÃ¥gan sÃ¥ att den stÃ¤mmer Ã¶verens med din tabell. Experimentera gÃ¤rna med MyPHPadmin fÃ¶r att hitta rÃ¤tt frÃ¥ga.</li>
 </ul>
 </li>
-<li class="closed" ><h4>Lägg till inloggningsfunktion.</h4>
+<li class="closed" ><h4>LÃ¤gg till inloggningsfunktion.</h4>
 <ul>
 <li> Kopiera login.html till din sajt.</li>
 <li> Kopiera login.php till din sajt.</li>
-<li> Klistra ini checkLogin.php överst i alla sidor som ska skyddas..</li>
+<li> Klistra ini checkLogin.php Ã¶verst i alla sidor som ska skyddas..</li>
 </ul>
 </li>
-<li class="closed" ><h4>Bind samman alla sidor med länkar.</h4>
+<li class="closed" ><h4>Bind samman alla sidor med lÃ¤nkar.</h4>
 <ul>
 <li> Klistar in meny.html i dina sidor.</li>
-<li> Lägg till alla andra sidor som länkar.</li>
+<li> LÃ¤gg till alla andra sidor som lÃ¤nkar.</li>
 </ul>
 </li>
 </ul>
