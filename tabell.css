@@ -1,0 +1,51 @@
+/* tabell style */
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table a {
+	color: #000;
+}
+
+table a:hover {
+	color:#373737;
+	text-decoration: none;
+}
+
+th {
+	background-color: #B40E1F;
+	color: #F0F0F0;
+}
+
+td {
+	padding: 5px;
+}
+
+
+.leftpart {
+	width: 70%;
+}
+
+.rightpart {
+	width: 30%;
+}
+
+.small {
+	font-size: 75%;
+	color: #373737;
+}
+
+.topic-post {
+	height: 100px;
+	overflow: auto;
+}
+
+.post-content {
+	padding: 30px;
+}
+
+textarea {
+	width: 500px;
+	height: 200px;
+}
